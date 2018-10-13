@@ -1,9 +1,7 @@
-// @TODO: YOUR CODE HERE!
-
-
+//svg dimensions
 var svgWidth = 960;
 var svgHeight = 500;
-
+//margin settings
 var margin = {
  top: 20,
  right: 40,
@@ -69,17 +67,15 @@ d3.csv("assets/data/data.csv")
    .attr("r", "15")
    .attr("fill", "red")
    .attr("opacity", ".2")
-   .attr("class", "classCircle");
-
-   chartGroup.selectAll("classCircle")
-   .data(healthData)
-   .enter()
-   .append("text")
-   .text("Mytext");
+   
+   //can't get text to show on site :-( 
 
 
-
-
+  //  chartGroup.selectAll("classCircle")
+  //  .data(healthData)
+  //  .enter()
+  //  .append("text")
+  //  .text("Mytext");
 
 // Initialize tool tip
 
@@ -117,8 +113,5 @@ d3.csv("assets/data/data.csv")
      .attr("transform", `translate(${width / 2}, ${height + margin.top + 30})`)
      .attr("class", "axisText")
      .text(" % of Smokers");
-
-
-
-
+     
  });
